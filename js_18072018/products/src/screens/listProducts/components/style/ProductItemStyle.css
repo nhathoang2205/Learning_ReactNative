@@ -1,0 +1,27 @@
+/* Main */
+.group-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Product information */
+.product-info {
+    flex-direction: column;
+    text-align: left;
+}
+
+.name {
+    flex: 1;
+    margin: 0;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.price {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Button */
+.group-btn {
+    display: inline-block;
+}

@@ -1,0 +1,250 @@
+
+/* HEADER */
+header
+{
+  display: flex
+}
+.logo
+{
+  flex: 1;
+}
+
+.logo a
+{
+  display: inline-block;
+}
+
+.logo img
+{
+  width: 140px;
+  margin-top: 18px;
+  margin-left: 170px;
+  margin-bottom: 18px;
+  vertical-align: middle;
+}
+
+.header_menu
+{
+  flex: 2.5;
+  vertical-align: middle;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around
+}
+
+.button-btn {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 5px
+}
+
+.nav-group {
+  margin-top: 5px;
+}
+
+.navigation_tag li
+{
+  display: inline;
+  padding-left: 50px;
+}
+
+.navigation_tag li a
+{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.navigation_tag li a:hover
+{
+  color: orange;
+}
+
+/* TOPIC */
+
+.topic
+{
+  text-align: center;
+}
+
+/* .prev, .next 
+{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  position: absolute;
+  top: 58%;
+  width: 35px;
+  height: 35px;
+  margin-left: 45px;
+  margin-right: 45px;
+} */
+
+/* .next 
+{
+    right: 0;
+    border-radius: 50%;
+} */
+
+.topic1
+{
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topic2
+{
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topic3
+{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* DISCUSSION */
+
+.discussion
+{
+  width: 1110px;
+  margin: -185px 0 0;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 350px;
+  position: relative;
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.spans
+{
+  color: white;
+}
+.icon
+{
+  font-size: 25px;
+}
+
+.discussion_left
+{
+  float: left;
+  width: 370px;
+  height: 300px;
+  padding: 60px 16px;
+  background: #00bcd4;
+}
+.discussion_center
+{
+  float: left;       
+  width: 370px;
+  height: 345px;
+  margin-top: -25px;
+  padding: 85px 16px;
+  background: #ec6d48;
+}
+
+.discussion_right
+{
+  float: left;
+  width: 370px;
+  height: 300px;
+  padding: 60px 16px;
+  background: #00bcd4;
+}
+
+h3
+{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.discussion_comment
+{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* SIDE MENU */
+
+.sidenav 
+{
+  height: 100%; 
+  width: 0; 
+  position: fixed; /* Stay in place */
+  top: 0;
+  right: 0;
+  background-color: #00bcd4; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a 
+{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover, .offcanvas a:focus
+{
+  text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.side-footer
+{
+  color: white;
+}
+
+.side-footer ul li 
+{
+  display: inline-block;
+}
+
+.side-footer ul li a 
+{
+  display: inline-block;
+  padding-top: 100px;
+  font-size: 18px;
+}

@@ -1,0 +1,29 @@
+
+    BookShelve.prototype.updateprice = function (array) {
+        const milliSecondDate1 = 24 * 60 * 60 * 1000
+    
+        array.forEach(function (element, index) {
+            if (element.isRead) {
+                var Updatepricedays = Math.floor((new Date().getTime() - element.Dateupdateprice) / milliSecondDate1)
+                for (var d = 0; d < Updatepricedays; d++)  element.price -= element.price * 0.05
+            }
+            if (element.price < 5000) array.splice(index, 1)
+            element.Dateupdateprice = new Date().valueOf()
+        });
+    }(bookShelve.books)
+    BookShelve.prototype.findCheapestBook = function (array) {
+        var CheapestBook = array[0].price;
+        var index = 0
+        for (var i = 0; i < array.length; i++)
+            if (CheapestBook > array[i].price) {
+                CheapestBook = array[i].price
+                index = i
+            }
+        console.log('CheapestBook', array[index])
+    }(bookShelve.books)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    /*var bookShelve=new BookShelve([])
+    bookShelve.createBookShelve()
+    */
+    console.log('book  shelve',BookShelve.books)
+    console.log('book of duong thuyy',BookShelve.searchBooksByAuthorName('duong thuy'))
+    console.log('update book se co canh ma',BookShelve.books)

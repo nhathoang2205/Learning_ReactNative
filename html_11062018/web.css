@@ -1,0 +1,249 @@
+
+/* 1. HEADER */
+header {
+    display: flex; /*dùng float*/
+}
+/* 1.1. LOGO */
+.header_logo {
+    flex: 1;
+} 
+
+.header_logo img { /*Đặt img thành tên class*/
+    display: inline-block;
+    width: 131px;
+    height: 34px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 103px;
+}
+/* 1.2. NAVIGATION MENU */
+.navigation_group {
+    flex: 2.5;
+    margin-top: 30.25px;
+    margin-bottom: 30.75px;
+}
+
+.navigation_tag li {
+    display: inline;
+    text-transform: uppercase;
+    padding-left: 53px;
+}
+
+.navigation_tag li a {
+    text-decoration: none;
+    color: black;
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.navigation_tag li a:hover {
+    color: #127BBE;
+}
+
+/* 2. SERVICE AND PRODUCT */
+/* 2.1. TITLE */
+.sap_title {
+    display: inline;
+    text-align: center;
+}
+
+h2 { /*Đặt tên class cho thẻ h*/
+    margin-left: 509px;
+    margin-right: 509px;
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.sap_title_discription {
+    margin-left: 458px;
+    margin-right: 457px;
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* 2.2. BLOCKS */
+.sap_blocks_1, .sap_blocks_2 {
+    display: flex;
+    margin-left: 256px;
+    margin-right: 255px;
+}
+
+.blocks_1, .blocks_2, .blocks_3, .blocks_4, .blocks_5, .blocks_6 {
+    border: 1px solid gray;
+    text-align: center;
+    display: block;
+    width: 257px;
+    height: 256px; /*Không nên dùng*/
+    background: #D3DDE0;
+}
+
+.blocks_logo {
+    display: inline-block;
+    width: 62px;
+    height: 63px;
+    background: #127BBE;
+}
+
+.blocks_logo p {
+    text-align: center;
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+/*Dùng chung*/
+.blocks_title {
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E2F30;
+}
+
+.blocks_discription {
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #5A5956;
+}
+
+.blocks_discription:hover {
+    color: #127BBE;
+    text-decoration: underline;
+}
+
+.blocks_navigation {
+    color: #127BBE;
+}
+
+
+.blocks_navigation {
+    display: inline-block;
+}
+
+.blocks_navigation p {
+    display: inline;
+}
+
+
+.blocks_navigation a {
+    display: inline;
+    text-decoration: none;
+}
+
+/* 3. BOTTOM NAVIGATION */
+.bottom_navigation {
+    display: block;
+    width: 1280px;
+    height: 294px;
+    background: #E7ECEE;
+}
+
+.column_title {
+    text-align: center;
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 40px;
+    padding-bottom: 235px;
+}
+
+.column_discription li a {
+    text-decoration: none;
+    text-align: left;
+    font-style: regular;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 14px;
+    color: #5A5956;
+}
+
+.column_1, .column_2, .column_3, .column_4, .column_5 {
+    display: inline-block;
+}
+
+/* COLUMN 1 */
+.column_1 {
+    display: inline-block;
+    width: 174px;
+    height: 150px;
+}
+
+.column_1 p {
+    padding: 40px 1051.5px 235px 99.5px;
+}
+
+.column_1 ul {
+    padding: 79px 1006.5px 65px 99.5px;
+}
+
+/* COLUMN 2 */
+.column_2 {
+    display: inline-block;
+    width: 137px;
+    height: 175px;
+}
+
+.column_2 p {
+    padding: 40px 793.5px 235px 325.5px;
+}
+
+.column_2 ul {
+    padding: 79px 817.5px 40px 325.5px;
+}
+
+/* COLUMN 3 */
+.column_3 {
+    display: inline-block;
+    width: 76px;
+    height: 150px;
+}
+
+.column_3 p {
+    padding: 40px 580.5px 235px 543.5px;
+}
+
+.column_3 ul {
+    padding: 79px 660.5px 65px 543.5px;
+}
+
+/* COLUMN 4 */
+.column_4 {
+    display: inline-block;
+    width: 179px;
+    height: 175px;
+}
+
+.column_4 p {
+    padding: 40px 436.5px 235px 755.5x;   
+}
+
+.column_4 ul {
+    padding: 79px 345.5px 40px 755.5px;
+}
+
+/* COLUMN 5 */
+.column_5 {
+    display: inline-block;
+    width: 193px;
+    height: 150px;
+}
+
+.column_5 p {
+    padding: 40px 135.5px 235px 988.5px;
+}
+
+.column_5 ul {
+    padding: 79px 98.5px 65px 988.5px;
+}

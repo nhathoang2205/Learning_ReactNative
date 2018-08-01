@@ -1,0 +1,40 @@
+/* Main */
+.App {
+  margin: 0 15px;
+  text-align: center;
+}
+
+/* 1.   Developer Customization */
+/* 1.1. Header */
+.App-header {
+  display: flex;
+  height: 75px;
+  padding: 20px;
+  background-color: #222;
+  color: white;  
+}
+
+.App-logo-react, .App-logo-redux {
+  animation: App-logo-spin infinite 20s linear;
+  flex: 1;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App-title {
+  flex: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+/* 1.2. Footer */
+.App-footer {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  background-color: dimgray;
+  color: white;
+}
