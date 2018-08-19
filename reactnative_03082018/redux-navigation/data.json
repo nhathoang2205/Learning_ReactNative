@@ -1,0 +1,19 @@
+{
+    "products": [{
+        "id": 0,
+        "name": "T shirt",
+        "type": "CLOTHES"
+    }, {
+        "id": 2,
+        "name": "high heel",
+        "type": "SHOES"
+    }, {
+        "id": 4,
+        "name": "Bitis hunter",
+        "type": "SHOES"
+    }, {
+        "id": 9,
+        "name": "Pull bear",
+        "type": "CLOTHES"
+    }]
+}
