@@ -5,7 +5,6 @@ import {
 } from 'react-native';
 
 // Component
-import hamburgerBtn from '../assets/hamburger.png'
 
 const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBar.currentHeight;
 

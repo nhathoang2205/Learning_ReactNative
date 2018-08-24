@@ -1,85 +1,95 @@
 // Library
 import React from 'react';
 import { 
-    View, StyleSheet, TouchableOpacity, Text
+    View, TextInput, TouchableOpacity, Text, Image,
 } from 'react-native';
-
-// Component
-import TextInput from '@common/TextInput';
 
 // Main Login Screen
 export default class LoginScreen extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      value: this.props.value
+    }
+  };
 
   render() {
 
     return (
 
-      <View style={styles.login}>
+      <View style={{ flex: 1, }}>
 
-        {/* RENDER: Login header */}
-			<TouchableOpacity
-				style={{ backgroundColor: 'rgb(55, 78, 105)', alignItems: 'center', }}
-				onPress={() => {}}>
-				<Text 
-						styles={{ fontSize: 17, letterSpacing: 0.5, }}>
-						LOGIN
-				</Text>
-			</TouchableOpacity>
-							
-			{/* RENDER: Login center */}
-			<View style={styles.inputCenter}>
+        {/* RENDER: Header */}
+        <TouchableOpacity 
+          style={{ flex: 1, backgroundColor: 'rgb(55, 78, 105)', }} 
+          onPress={() => {}}>
+            <Text style={{ paddingTop: 50, paddingLeft: 160, fontSize: 18, letterSpacing: 0.5, color: 'rgb(255, 255, 255)',}}>LOGIN</Text>
+        </TouchableOpacity>
+        
+        {/* RENDER: Login center */}
+        <View style={{ flex: 9, paddingLeft: 35, paddingRight: 35, }}>
 
-				{/* RENDER: Login input center */}
-				<View style={{}}>
-						<Image
-								source={require('../../../assets/icon/emailIcon.png')}
-								style={{}}
-						/>
-						<TextInput
-								placeholder='Username' 
-								style={styles.textInput}
-								value={props.value}
-								onChangeText={(text) => props.onSearch(text)}
-						/>
-				</View>
-					
-				<View style={{}}>
-						<Image
-								source={require('../../../assets/icon/lockIcon.png')}
-								style={{}}
-						/>
-						<TextInput
-								placeholder='Username' 
-								style={styles.textInput}
-								value={props.value}
-								onChangeText={(text) => props.onSearch(text)}
-						/>
-				</View>
+          <View style={{ flex: 1, }}></View>
 
-				{/* RENDER: Login button */}
-				<TouchableOpacity onPress={() => {}}>
-						<Text>LOGIN</Text>
-				</TouchableOpacity>
+          {/* RENDER: Input center - Email */}
+          <View style={{ flex: 1, }}>
 
-			</View>
+            <Text style={{ flex: 1, paddingTop: 8, fontSize: 15, color: 'rgb(164, 170, 179)', }}>Email</Text>
 
-	</View>
-			)
-	}
+            <View style={{ flex: 2, flexDirection: 'row', alignItems: 'center', }}>
+              <View style={{ flex: 1, alignItems: 'center', }}>
+                <Image
+                  source={require('../../../assets/icon/emailIcon.png')}
+                />
+              </View>
+              <TextInput
+                placeholder='user.email@domain.com'  
+                style={{ flex: 5, alignItems: 'center', fontSize: 16, color: 'rgb(40, 41, 43)', }}
+                value={this.props.value}
+                onChangeText={(text) => this.props.onSearch(text)}
+              />
+            </View>
+
+          </View>
+
+          {/* RENDER: Input center - Password */}
+          <View style={{ flex: 1, }}>
+
+            <Text style={{ flex: 1, paddingTop: 8, fontSize: 14, color: 'rgb(164, 170, 179)', }}>Password</Text>
+
+            <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', }}>
+              <View style={{ flex: 1, alignItems: 'center', }}>
+                <Image
+                    source={require('../../../assets/icon/lockIcon.png')}
+                  />
+              </View>
+              <TextInput
+                placeholder='*********'  
+                style={{ flex: 5, alignItems: 'center', fontSize: 16, color: 'rgb(40, 41, 43)', }}
+                value={this.props.value}
+                onChangeText={(text) => this.props.onSearch(text)}
+              />
+            </View>
+            
+          </View>
+
+          <View style={{ flex: 1, }}></View>
+
+          {/* RENDER: Login button */}
+          <View style={ { flex: 1/2, paddingLeft: 60, }}>
+            <TouchableOpacity
+              style={{ width: 192, height: 40, backgroundColor: 'rgb(55, 78, 105)', alignItems: 'center', borderRadius: 25, }}
+              onPress={() => {}}>
+                <Text style={{ paddingTop: 10, fontSize: 16, color: 'rgb(255, 255, 255)', }}>LOGIN</Text>
+            </TouchableOpacity>
+          </View>
+          
+          <View style={{ flex: 4, }}></View>
+
+        </View>
+
+      </View>  
+    )
+  };
 };
-
-// Style Login Screen
-const styles = StyleSheet.create({
-    
-  login: {
-
-  },
-
-  inputCenter: {
-
-  },
-
-  textInput: {
-
-  },
-});

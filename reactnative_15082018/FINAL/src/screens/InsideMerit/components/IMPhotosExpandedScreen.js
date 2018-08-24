@@ -7,8 +7,8 @@ import {
 // Component
 
 
-// Main Activity Screen
-export default class ActivityScreen extends React.Component {
+// Main Inside merit Screen: Photos expanded
+export default class IMPhotosExpandedScreen extends React.Component {
   
   render() {
     
