@@ -1,10 +1,16 @@
 // Library
+
+// react
 import React from 'react';
+
+// react-native
 import { 
     View, Text, Image, TouchableOpacity
 } from 'react-native';
 
+
 // Component
+
 // Button
 import cancelBtn from '@assets/icon/group2.png';
 

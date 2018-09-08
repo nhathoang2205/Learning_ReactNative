@@ -1,13 +1,20 @@
 // Library
+
+// react
 import React from 'react';
+
+// react-native
 import { 
     View, TextInput, TouchableOpacity, Text, Image,
 } from 'react-native';
 
+
 // Component
+
 // Button
 import emailBtn from '@assets/icon/emailIcon.png';
 import lockBtn from '@assets/icon/lockIcon.png';
+
 
 // Main Login Screen
 export default class LoginScreen extends React.Component {

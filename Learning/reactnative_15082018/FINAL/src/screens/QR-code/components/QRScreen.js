@@ -1,14 +1,20 @@
 // Library
+
+// react
 import React from 'react';
+
+// react-native
 import { 
   View, Text, Image, TouchableOpacity
 } from 'react-native';
 
+
 // Component
 
 
-// Main Activity Screen
-export default class ActivityScreen extends React.Component {
+
+// Main QRCode Screen
+export default class QRScreen extends React.Component {
   
   render() {
     
