@@ -12,7 +12,7 @@ import {
 // Component
 
 // Screens
-import StatusBarCustom from '@navigation/StatusBarCustom';
+import StatusBarCustom from '@navigation/components/StatusBarCustom';
 
 // Button
 import sidebarBtn from '@assets/icon/Hamburger.png';
@@ -41,14 +41,14 @@ const HeaderNavigation = (props) => {
           </TouchableOpacity>
         </View>
 
-      {/* RENDER: Header */}
-      <View style={{ backgroundColor: 'green', }}>
-        <Text style={{ fontSize: 18, color: '#rgb(255, 255, 255)', }}>{props.title}</Text>
-      </View>
+        {/* RENDER: Header */}
+        <View style={{ backgroundColor: 'green', }}>
+          <Text style={{ fontSize: 18, color: '#rgb(255, 255, 255)', }}>{props.title}</Text>
+        </View>
       
-    </View>
+      </View>
 
-  </View>
+    </View>
   )
 };
 

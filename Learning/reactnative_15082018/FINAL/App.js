@@ -3,6 +3,11 @@
 // react
 import React from 'react';
 
+// react-native
+import { 
+  View, Text
+} from 'react-native';
+
 // react-navigation
 import { 
   createDrawerNavigator, createBottomTabNavigator, createStackNavigator 
@@ -42,13 +47,14 @@ import filterFriendReducer from '@reducers/filterFriendReducer';
 import rootSaga from '@sagas/rootSaga';
 
 // Screens
-import ActivityScreen from '@activity/ActivityScreen';
-import CiScreen from '@checkin/CiScreen';
-import HomeScreen from '@home/HomeScreen';
-import IMScreen from '@insidemerit/IMScreen';
-import LoginScreen from '@login/LoginScreen';
-import QRScreen from '@QRcode/QRScreen';
-import WellcomeScreen from '@wellcome/WellcomeScreen';
+import ActivityScreen from '@activity/components/ActivityScreen';
+import CiScreen from '@checkin/components/CiScreen';
+import HomeScreen from '@home/components/HomeScreen';
+import IMScreen from '@insidemerit/components/IMScreen';
+import LoginScreen from '@login/components/LoginScreen';
+import QRScreen from '@QRcode/components/QRScreen';
+import WellcomeScreen from '@wellcome/components/WellcomeScreen';
+
 
 // Main App
 export default class App extends React.Component {
@@ -57,11 +63,9 @@ export default class App extends React.Component {
     
     return (
 
-      <Provider store={store}>
-
-        <ActivityScreen />
-
-      </Provider>
+      <View style={{ backgroundColor: 'red', }}>
+        <Text>Go</Text>
+      </View>
     )
   };
 };

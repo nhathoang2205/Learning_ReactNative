@@ -194,7 +194,7 @@ const rejectFriendRequest = (state, action) => {
   })
 };
 
-const rejectFriendRequest = (state, action) => {
+const rejectFriendSuccessed = (state, action) => {
 
   
 }

@@ -59,7 +59,7 @@ const HANDELER = {
   [Types.FILTER_BY_NAME]: filterByName,
 
   // filter by status
-  [Types.FILTER_BY_BRAND]: filterByBrand,
+  [Types.FILTER_BY_STATUS]: filterByStatus,
 };
 
 // Declutter reducers
